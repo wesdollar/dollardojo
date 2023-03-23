@@ -8,10 +8,12 @@ import DiscordIcon from "~/components/icons/discord-icon";
 import GithubIcon from "~/components/icons/github-icon";
 import { Heading } from "@twilio-paste/core/heading";
 import { Separator } from "@twilio-paste/core/separator";
+import { Text } from "@twilio-paste/core/text";
 import { Paragraph } from "@twilio-paste/core/paragraph";
 import { Column, Grid } from "@twilio-paste/core/";
 import { LinkedinIcon } from "~/components/icons/linkedin-icon";
 import { CustomizationProvider } from "@twilio-paste/core/customization";
+import { BodyParagraph } from "~/components/typography/body-paragraph";
 
 export default function Index() {
   return (
@@ -24,7 +26,7 @@ export default function Index() {
         <LogoSquareWithMascotTransparentBg />
       </Box>
       <Box
-        marginTop="space60"
+        marginTop="space0"
         display="flex"
         justifyContent={"center"}
         padding={["space0", "space80"]}
@@ -59,6 +61,11 @@ export default function Index() {
           </Grid>
         </Stack>
       </Box>
+      <Box display={"flex"} justifyContent="center" marginBottom={"space0"}>
+        <Heading as="h1" variant="heading10">
+          Learn. Grow. Teach. Repeat.
+        </Heading>
+      </Box>
       <Box
         display={"flex"}
         justifyContent={"center"}
@@ -67,41 +74,46 @@ export default function Index() {
       >
         <Card element="CARD">
           <Box maxWidth={"600px"}>
-            <Heading as="h2" variant="heading20">
-              Hi, I'm Wes! I build amazing products and teams that deliver.
+            <Heading as="h1" variant="heading10">
+              Hi, I'm Wes! I would love the honor and privilege of helping you
+              grow and succeed in your career.
             </Heading>
-            <Paragraph>
-              Dollar Dojo is my platform for sharing my experiences with anyone
-              who wants to learn. We're building a community where we can all
-              learn from each other. After 25 years in this game, I still learn
-              new things from everyone around me, including junior engineers.
-            </Paragraph>
-            <Paragraph>
-              I'm very passionate about helping people grow and traverse the
-              waters of a career in software and technology. In many ways, I
-              want to share everything with you that I wish someone would've
-              told me 15 years ago. I'd certainly be much further along in my
-              career, and it would have saved me from some lessons learned the
-              hard way.
-            </Paragraph>
-            <Paragraph>
+            <BodyParagraph>
+              Dollar Dojo is a community of software developers and
+              technologists that are committed to growing and learning together.
+              We take an each one teach one approach to learning and growing. We
+              believe that the best ways to learn are by doing and teaching.
+              After all, the only way to learn how to code is to code.
+            </BodyParagraph>
+            <BodyParagraph>
+              I built this community to ensure that I stay engaged with those
+              who have trusted me as their mentor and to provide a platform for
+              others to mentor as well. I thought it was also an excellent
+              opportunity to invite people like you into the community. Multiple
+              brains and perspectives are always better than one.
+            </BodyParagraph>
+            <BodyParagraph>
               If you're looking to grow your career in the software industry,
               Dollar Dojo is the community you've been looking for. I live
-              stream development and research on Twitch, uploading videos to
-              YouTube, and sharing my thoughts, discoveries, and otherwise
-              random ideas on Discord. Our Discord has a great community of
-              people who are always willing to help each other out and grow
-              together.
-            </Paragraph>
-            <Paragraph>
+              stream development and research on Twitch, upload videos to
+              YouTube, and share my thoughts, discoveries, and otherwise random
+              ideas on Discord. Our Discord has a great community of people who
+              are always willing to help each other out and grow together.
+            </BodyParagraph>
+            <BodyParagraph>
               Everyone is welcome in our community with arms wide open and hugs
-              to go around.{" "}
-            </Paragraph>
-            <Paragraph>
-              Thanks for dropping by! I look forward to seeing you on stream or
-              in the Discord!
-            </Paragraph>
-            <Paragraph>Until then... keep writing clean code!</Paragraph>
+              to go around. I want to spread nothing but love and light, and I
+              expect everyone in our community to do the same. We can make a
+              huge difference in the world by being loving and kind to each
+              other.
+            </BodyParagraph>
+            <BodyParagraph>
+              Thanks for dropping by! I hope you'll consider joining the
+              community. It's an investment in yourself that will pay dividends
+              for the rest of your life. I look forward to seeing you on stream
+              or in the Discord!
+            </BodyParagraph>
+            <BodyParagraph>Until then, keep writing clean code!</BodyParagraph>
           </Box>
         </Card>
       </Box>
