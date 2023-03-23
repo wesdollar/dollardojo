@@ -1,7 +1,6 @@
 import { Card } from "@twilio-paste/core/card";
 import { LogoSquareWithMascotTransparentBg } from "~/components/svg/logo-square-with-mascot-transparent-bg";
 import { Box } from "@twilio-paste/core/box";
-import { Theme } from "@twilio-paste/core/theme";
 import { Stack } from "@twilio-paste/core/stack";
 import TwitchIcon from "~/components/icons/twitch-icon";
 import YoutubeIcon from "~/components/icons/youtube-icon";
@@ -12,10 +11,11 @@ import { Separator } from "@twilio-paste/core/separator";
 import { Paragraph } from "@twilio-paste/core/paragraph";
 import { Column, Grid } from "@twilio-paste/core/";
 import { LinkedinIcon } from "~/components/icons/linkedin-icon";
+import { CustomizationProvider } from "@twilio-paste/core/customization";
 
 export default function Index() {
   return (
-    <Theme.Provider theme="dark">
+    <>
       <Box
         display="flex"
         justifyContent={"center"}
@@ -108,6 +108,6 @@ export default function Index() {
       <Box display="block" margin="space100">
         &nbsp;
       </Box>
-    </Theme.Provider>
+    </>
   );
 }
