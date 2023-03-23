@@ -11,6 +11,7 @@ import { Heading } from "@twilio-paste/core/heading";
 import { Separator } from "@twilio-paste/core/separator";
 import { Paragraph } from "@twilio-paste/core/paragraph";
 import { Column, Grid } from "@twilio-paste/core/";
+import { LinkedinIcon } from "~/components/icons/linkedin-icon";
 
 export default function Index() {
   return (
@@ -48,6 +49,11 @@ export default function Index() {
             <Column>
               <a href="//github.com/wesdollar" target={"_blank"}>
                 <GithubIcon />
+              </a>
+            </Column>
+            <Column>
+              <a href="//linkedin.com/in/wesdollar" target={"_blank"}>
+                <LinkedinIcon />
               </a>
             </Column>
           </Grid>
