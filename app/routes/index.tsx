@@ -65,7 +65,7 @@ export default function Index() {
         marginTop={"space200"}
         padding={["space0", "space80"]}
       >
-        <Card>
+        <Card element="CARD">
           <Box maxWidth={"600px"}>
             <Heading as="h2" variant="heading20">
               Hi, I'm Wes! I build amazing products and teams that deliver.

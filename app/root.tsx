@@ -10,7 +10,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import tailwindStylesheetUrl from "./styles/tailwind.css";
-import { Theme } from "@twilio-paste/core/theme";
+import { CustomizationProvider } from "@twilio-paste/core/customization";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: tailwindStylesheetUrl }];
@@ -31,12 +31,27 @@ export default function App() {
         ></link>
       </head>
       <body className="h-full">
-        <Theme.Provider theme="dark">
+        <CustomizationProvider
+          baseTheme="dark"
+          theme={{
+            backgroundColors: {
+              colorBackgroundBody: "#3D115E",
+            },
+            borderColors: {
+              colorBorderInverseWeakest: "#662D91",
+            },
+          }}
+          elements={{
+            CARD: {
+              borderColor: "colorBorderInverseWeakest",
+            },
+          }}
+        >
           <Outlet />
           <ScrollRestoration />
           <Scripts />
           <LiveReload />
-        </Theme.Provider>
+        </CustomizationProvider>
       </body>
     </html>
   );
