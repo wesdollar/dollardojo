@@ -7,9 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { CustomizationProvider } from "@twilio-paste/core/customization";
-import { Box } from "@twilio-paste/core/box";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",

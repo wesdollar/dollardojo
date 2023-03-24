@@ -1,0 +1,13 @@
+node_modules
+
+/.cache
+
+/.netlify
+.env
+
+.vscode
+/public
+
+.eslintrc.js
+remix.config.js
+server.js
