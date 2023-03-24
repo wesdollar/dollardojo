@@ -1,1 +1,5 @@
-export const homepageIconStyling = { width: 64, fill: "white" };
+export const homepageIconStyling = {
+  width: 64,
+  fill: "white",
+  display: "block",
+};

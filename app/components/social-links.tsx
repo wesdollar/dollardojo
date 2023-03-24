@@ -6,6 +6,7 @@ import { LinkedinIcon } from "./icons/linkedin-icon";
 import { TwitchIcon } from "./icons/twitch-icon";
 import { YoutubeIcon } from "./icons/youtube-icon";
 import { Anchor } from "@twilio-paste/core/anchor";
+import { CalendarIcon } from "./icons/calendar-icon";
 
 export const SocialLinks = () => {
   return (
@@ -16,7 +17,12 @@ export const SocialLinks = () => {
     >
       <Grid gutter={"space60"} vertical={[true, true, false]}>
         <Column span={6}>
-          <Grid gutter="space50" rowGap={"space50"} columnGap={"space100"}>
+          <Grid
+            gutter="space50"
+            rowGap={"space50"}
+            columnGap={"space100"}
+            style={{ justifyContent: "right" }}
+          >
             <Column span={4}>
               <Anchor href="https://discord.gg/mhvcpSPbwu">
                 <DiscordIcon />
@@ -36,14 +42,19 @@ export const SocialLinks = () => {
         </Column>
         <Column span={6}>
           <Grid gutter="space50" rowGap={"space50"} columnGap={"space100"}>
-            <Column span={5} offset={1}>
+            <Column span={4}>
               <Anchor href="https://github.com/wesdollar">
                 <GithubIcon />
               </Anchor>
             </Column>
-            <Column span={5}>
+            <Column span={4}>
               <Anchor href="https://linkedin.com/in/wesdollar">
                 <LinkedinIcon />
+              </Anchor>
+            </Column>
+            <Column span={4}>
+              <Anchor href="https://calendly.com/dollardojo">
+                <CalendarIcon fill="white" />
               </Anchor>
             </Column>
           </Grid>
