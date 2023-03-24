@@ -5,9 +5,11 @@ module.exports = {
     "@remix-run/eslint-config/node",
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
   ],
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "prettier", "jest"],
+  plugins: ["@typescript-eslint", "prettier", "jest", "jsx-a11y"],
   env: {
     commonjs: true,
     es6: true,
@@ -172,5 +174,7 @@ module.exports = {
     "react/no-danger": "error",
     "react/no-multi-comp": "error",
     "react/no-typos": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
   },
 };
