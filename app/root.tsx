@@ -15,6 +15,7 @@ export const meta: MetaFunction = () => ({
   viewport: "width=device-width,initial-scale=1",
 });
 
+// eslint-disable-next-line react/function-component-definition
 export default function App() {
   return (
     <html lang="en">

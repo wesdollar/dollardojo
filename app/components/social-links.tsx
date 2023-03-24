@@ -1,15 +1,13 @@
 import { Box } from "@twilio-paste/core/box";
 import { Grid, Column } from "@twilio-paste/core/grid";
-import React from "react";
-import DiscordIcon from "./icons/discord-icon";
-import GithubIcon from "./icons/github-icon";
+import { DiscordIcon } from "./icons/discord-icon";
+import { GithubIcon } from "./icons/github-icon";
 import { LinkedinIcon } from "./icons/linkedin-icon";
-import TwitchIcon from "./icons/twitch-icon";
-import YoutubeIcon from "./icons/youtube-icon";
+import { TwitchIcon } from "./icons/twitch-icon";
+import { YoutubeIcon } from "./icons/youtube-icon";
 import { Anchor } from "@twilio-paste/core/anchor";
 
-// create a react component that returns jsx
-export default function SocialLinks() {
+export const SocialLinks = () => {
   return (
     <Box
       justifyContent={"center"}
@@ -53,4 +51,4 @@ export default function SocialLinks() {
       </Grid>
     </Box>
   );
-}
+};

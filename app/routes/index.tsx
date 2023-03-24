@@ -7,8 +7,9 @@ import { Column, Grid } from "@twilio-paste/core/";
 import { BodyParagraph } from "~/components/typography/body-paragraph";
 import { Stack } from "@twilio-paste/core/stack";
 import { Button } from "@twilio-paste/core/button";
-import SocialLinks from "~/components/social-links";
+import { SocialLinks } from "~/components/social-links";
 
+// eslint-disable-next-line react/function-component-definition
 export default function Index() {
   return (
     <>
