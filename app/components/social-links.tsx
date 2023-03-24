@@ -20,7 +20,7 @@ export default function SocialLinks() {
         <Column span={6}>
           <Grid gutter="space50" rowGap={"space50"} columnGap={"space100"}>
             <Column span={4}>
-              <Anchor href="//discord.gg/mhvcpSPbwu">
+              <Anchor href="https://discord.gg/mhvcpSPbwu">
                 <DiscordIcon />
               </Anchor>
             </Column>
