@@ -33,7 +33,7 @@ export default function Index() {
       <Grid
         marginTop="space200"
         gutter="space80"
-        vertical={[true, false, false]}
+        vertical={[true, true, false]}
       >
         <Column span={[12, 6, 6]}>
           <Card element="CARD">

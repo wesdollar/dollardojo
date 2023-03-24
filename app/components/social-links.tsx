@@ -16,7 +16,7 @@ export default function SocialLinks() {
       padding={["space0", "space80"]}
       style={{ width: "100%", maxWidth: "750px", margin: "0 auto" }}
     >
-      <Grid gutter={"space60"} vertical={[true, false, false]}>
+      <Grid gutter={"space60"} vertical={[true, true, false]}>
         <Column span={6}>
           <Grid gutter="space50" rowGap={"space50"} columnGap={"space100"}>
             <Column span={4}>

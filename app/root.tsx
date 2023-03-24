@@ -50,9 +50,7 @@ export default function App() {
             },
           }}
         >
-          <Box as="main" padding={["space0", "space200"]}>
-            <Outlet />
-          </Box>
+          <Outlet />
           <ScrollRestoration />
           <Scripts />
           <LiveReload />
