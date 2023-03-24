@@ -21,6 +21,7 @@ export default function App() {
   return (
     <html lang="en">
       <head>
+        <title>Dollar Dojo</title>
         <Meta />
         <Links />
       </head>
