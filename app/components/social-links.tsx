@@ -6,6 +6,7 @@ import GithubIcon from "./icons/github-icon";
 import { LinkedinIcon } from "./icons/linkedin-icon";
 import TwitchIcon from "./icons/twitch-icon";
 import YoutubeIcon from "./icons/youtube-icon";
+import { Anchor } from "@twilio-paste/core/anchor";
 
 // create a react component that returns jsx
 export default function SocialLinks() {
@@ -19,53 +20,33 @@ export default function SocialLinks() {
         <Column span={6}>
           <Grid gutter="space50" rowGap={"space50"} columnGap={"space100"}>
             <Column span={4}>
-              <a
-                href="//discord.gg/mhvcpSPbwu"
-                target={"_blank"}
-                rel="noreferrer"
-              >
+              <Anchor href="//discord.gg/mhvcpSPbwu">
                 <DiscordIcon />
-              </a>
+              </Anchor>
             </Column>
             <Column span={4}>
-              <a
-                href="//twich.tv/dollardojo"
-                target={"_blank"}
-                rel="noreferrer"
-              >
+              <Anchor href="https://twich.tv/dollardojo">
                 <TwitchIcon />
-              </a>
+              </Anchor>
             </Column>
             <Column span={4}>
-              <a
-                href="//youtube.com/@dollardojotech"
-                target={"_blank"}
-                rel="noreferrer"
-              >
+              <Anchor href="https://youtube.com/@dollardojotech">
                 <YoutubeIcon />
-              </a>
+              </Anchor>
             </Column>
           </Grid>
         </Column>
         <Column span={6}>
           <Grid gutter="space50" rowGap={"space50"} columnGap={"space100"}>
             <Column span={5} offset={1}>
-              <a
-                href="//github.com/wesdollar"
-                target={"_blank"}
-                rel="noreferrer"
-              >
+              <Anchor href="https://github.com/wesdollar">
                 <GithubIcon />
-              </a>
+              </Anchor>
             </Column>
             <Column span={5}>
-              <a
-                href="//linkedin.com/in/wesdollar"
-                target={"_blank"}
-                rel="noreferrer"
-              >
+              <Anchor href="https://linkedin.com/in/wesdollar">
                 <LinkedinIcon />
-              </a>
+              </Anchor>
             </Column>
           </Grid>
         </Column>
