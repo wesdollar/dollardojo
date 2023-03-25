@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
+import { json, MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -12,9 +12,16 @@ import linkedInImage from "./assets/linkedin-cover-1200x627.png";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
   viewport: "width=device-width,initial-scale=1",
 });
+
+export function loader() {
+  return json({
+    ENV: {
+      SITE_TITLE: process.env.SITE_TITLE,
+    },
+  });
+}
 
 // eslint-disable-next-line react/function-component-definition
 export default function App() {
