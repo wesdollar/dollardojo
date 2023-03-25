@@ -8,6 +8,27 @@ import { YoutubeIcon } from "./icons/youtube-icon";
 import { Anchor } from "@twilio-paste/core/anchor";
 import { CalendarIcon } from "./icons/calendar-icon";
 
+const socialLinksColumn1 = [
+  { url: "https://discord.gg/mhvcpSPbwu", Icon: DiscordIcon },
+  { url: "https://twich.tv/dollardojo", Icon: TwitchIcon },
+  {
+    url: "https://youtube.com/@dollardojotech",
+    Icon: YoutubeIcon,
+  },
+];
+
+const socialLinksColumn2 = [
+  { url: "https://github.com/wesdollar", Icon: GithubIcon },
+  {
+    url: "https://linkedin.com/in/wesdollar",
+    Icon: LinkedinIcon,
+  },
+  {
+    url: "https://calendly.com/dollardojo",
+    Icon: CalendarIcon,
+  },
+];
+
 export const SocialLinks = () => {
   return (
     <Box
@@ -16,47 +37,35 @@ export const SocialLinks = () => {
       style={{ width: "100%", maxWidth: "750px", margin: "0 auto" }}
     >
       <Grid gutter={"space60"} vertical={[true, true, false]}>
-        <Column span={6}>
+        <Column span={6} style={{ display: "flex", justifyContent: "center" }}>
           <Grid
             gutter="space50"
             rowGap={"space50"}
             columnGap={"space100"}
             style={{ justifyContent: "right" }}
           >
-            <Column span={4}>
-              <Anchor href="https://discord.gg/mhvcpSPbwu">
-                <DiscordIcon />
-              </Anchor>
-            </Column>
-            <Column span={4}>
-              <Anchor href="https://twich.tv/dollardojo">
-                <TwitchIcon />
-              </Anchor>
-            </Column>
-            <Column span={4}>
-              <Anchor href="https://youtube.com/@dollardojotech">
-                <YoutubeIcon />
-              </Anchor>
-            </Column>
+            {socialLinksColumn1.map(({ url, Icon }, index) => (
+              <Column span={4} key={`social-link-column-1-${index}`}>
+                <Box style={{ display: "flex", justifyContent: "center" }}>
+                  <Anchor href={url} style={{ margin: "0 auto" }}>
+                    <Icon />
+                  </Anchor>
+                </Box>
+              </Column>
+            ))}
           </Grid>
         </Column>
         <Column span={6}>
           <Grid gutter="space50" rowGap={"space50"} columnGap={"space100"}>
-            <Column span={4}>
-              <Anchor href="https://github.com/wesdollar">
-                <GithubIcon />
-              </Anchor>
-            </Column>
-            <Column span={4}>
-              <Anchor href="https://linkedin.com/in/wesdollar">
-                <LinkedinIcon />
-              </Anchor>
-            </Column>
-            <Column span={4}>
-              <Anchor href="https://calendly.com/dollardojo">
-                <CalendarIcon fill="white" />
-              </Anchor>
-            </Column>
+            {socialLinksColumn2.map(({ url, Icon }, index) => (
+              <Column span={4} key={`social-link-column-2-${index}`}>
+                <Box style={{ display: "flex", justifyContent: "center" }}>
+                  <Anchor href={url}>
+                    <Icon />
+                  </Anchor>
+                </Box>
+              </Column>
+            ))}
           </Grid>
         </Column>
       </Grid>

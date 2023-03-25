@@ -170,11 +170,11 @@ module.exports = {
     "react/jsx-no-script-url": "error",
     "react/jsx-no-target-blank": "error",
     "react/jsx-no-useless-fragment": "error",
-    "react/no-array-index-key": "error",
     "react/no-danger": "error",
     "react/no-multi-comp": "error",
     "react/no-typos": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
   },
 };

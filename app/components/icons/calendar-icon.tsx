@@ -1,11 +1,7 @@
 import { homepageIconStyling } from "~/constants/icon-constants";
+import type { IconProps } from "./types/icon-prop";
 
-interface CalendarIconProps {
-  fill: string;
-  width?: string;
-}
-
-export const CalendarIcon = ({ fill, width = "55px" }: CalendarIconProps) => (
+export const CalendarIcon = ({ fill = "white", width = "55px" }: IconProps) => (
   <svg
     enableBackground="new 0 0 32 32"
     style={{ ...homepageIconStyling, width }}
