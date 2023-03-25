@@ -9,6 +9,7 @@ import {
 } from "@remix-run/react";
 import { CustomizationProvider } from "@twilio-paste/core/customization";
 import linkedInImage from "./assets/linkedin-cover-1200x627.png";
+import { dollarDojoDetails } from "./constants/dollar-dojo-details";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -28,16 +29,16 @@ export default function App() {
   return (
     <html lang="en">
       <head>
-        <title>Dollar Dojo</title>
+        <title>{dollarDojoDetails.name}</title>
         <Meta />
         <Links />
-        <meta property="og:title" content="Dollar Dojo" />
+        <meta property="og:title" content={dollarDojoDetails.name} />
         <meta property="og:image" content={linkedInImage} />
         <meta
           property="og:description"
-          content="Dollar Dojo is a community for software engineers and technologists to learn and grow together."
+          content={dollarDojoDetails.description}
         />
-        <meta property="og:url" content="https://dollardojo.tech" />
+        <meta property="og:url" content={dollarDojoDetails.url} />
       </head>
       <body>
         <CustomizationProvider
