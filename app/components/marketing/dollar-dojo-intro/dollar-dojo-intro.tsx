@@ -6,7 +6,7 @@ import { BodyParagraph } from "~/components/typography/body-paragraph";
 
 export const DollarDojoIntro = () => (
   <Card element="CARD">
-    <Box maxWidth={"600px"} justifyContent="center">
+    <Box justifyContent="center">
       <Stack orientation={"vertical"} spacing="space200">
         <Heading as="h2" variant="heading10">
           Hi, I'm Wes! I have a passion for helping software engineers level up.

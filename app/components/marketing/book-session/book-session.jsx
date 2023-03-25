@@ -13,8 +13,8 @@ export const BookSession = () => {
       </Heading>
       <BodyParagraph>
         I'm available for 30 and 60 minute sessions to discuss whatever's on
-        your mind. Sessions are free of charge, no strings attached. I'm here to
-        help you level up!
+        your mind. Sessions are free of charge, no strings attached. Let's
+        level-up together!
       </BodyParagraph>
       <Stack orientation={"horizontal"} spacing={defaultGutterSize}>
         <Grid gutter={"space60"} marginTop="space100">

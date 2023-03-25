@@ -8,6 +8,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import { CustomizationProvider } from "@twilio-paste/core/customization";
+import linkedInImage from "./assets/linkedin-cover-1200x627.png";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -23,6 +24,13 @@ export default function App() {
         <title>Dollar Dojo</title>
         <Meta />
         <Links />
+        <meta property="og:title" content="Dollar Dojo" />
+        <meta property="og:image" content={linkedInImage} />
+        <meta
+          property="og:description"
+          content="Dollar Dojo is a community for software engineers and technologists to learn and grow together."
+        />
+        <meta property="og:url" content="https://dollardojo.tech" />
       </head>
       <body>
         <CustomizationProvider
