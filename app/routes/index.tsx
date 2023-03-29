@@ -18,7 +18,7 @@ export default function Index() {
 
   return (
     <>
-      <Logo />
+      <Logo height="500px" />
       <Box
         display={"flex"}
         justifyContent="center"

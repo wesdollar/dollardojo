@@ -7,14 +7,21 @@ interface LogoProps {
   display?: "flex";
   justifyContent?: "center";
   padding?: Space;
+  height?: string;
 }
 
 export const Logo = ({
   display = "flex",
   justifyContent = "center",
   padding = ["space0", gutters.defaultGutterSize],
+  height,
 }: LogoProps) => (
-  <Box display={display} justifyContent={justifyContent} padding={padding}>
+  <Box
+    height={height}
+    display={display}
+    justifyContent={justifyContent}
+    padding={padding}
+  >
     <LogoSquareWithMascotTransparentBg />
   </Box>
 );
