@@ -4,3 +4,4 @@ node_modules
 /.netlify
 .env
 /public/audio
+.DS_Store
